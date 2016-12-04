@@ -1,0 +1,9 @@
+/r/{{model.subreddit}}
+
+{{#each pictures as |picture|}}
+  {{#light-box href=picture.url data-lightbox=picture.title data-title=picture.title inlineImage=false}}
+    <div class="img">
+      <img src="{{picture.thumbnail}}" width="110" height="90">
+    </div>
+  {{/light-box}}
+{{/each}}
