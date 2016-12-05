@@ -10,10 +10,11 @@ Router.map(function() {
   this.route('r', {
     path: 'r/:subreddit'
   });
-
   this.route('reddit', {
     path: 'reddit/:subreddit'
   });
+  this.route('dashboard');
+  this.route('about');
 });
 
 export default Router;

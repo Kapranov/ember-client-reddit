@@ -1,4 +1,5 @@
 /r/{{model.subreddit}}<br>
+
 {{#each pictures as |info|}}
   {{#if info.data}}
     {{#light-box href=info.data.url data-lightbox=info.data.title data-title=info.data.title inlineImage=false}}

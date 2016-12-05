@@ -1,0 +1,13 @@
+{{#if details}}
+  <div {{action 'showDetails'}} class="modal-background">
+    <div class="modal-frame">
+      <div class="modal-title">{{title}}</div>
+      <div class="modal-body">
+        {{yield}}
+        <button {{action 'hideDetails'}}>Close</button>
+      </div>
+    </div>
+  </div>
+{{else}}
+  <button {{action 'showDetails'}}>Show Details</button>
+{{/if}}
